@@ -1,0 +1,21 @@
+name: 'Run App'
+
+on: [push, pull_request]
+
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0'
+      - uses: nuget/setup-nuget@v1
+      - name: Nuget Restore
+        run: nuget restore Voting_System.sln
+      - name: Install dependencies
+        run: dotnet restore Voting_System.sln
+      - name: Build
+        run: dotnet build Voting_System.sln
+      - name: Run Unit Tests
+        run: dotnet test
