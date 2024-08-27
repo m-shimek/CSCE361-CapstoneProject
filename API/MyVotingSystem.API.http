@@ -1,0 +1,7 @@
+#THIS DOESNT DO ANYTHING MICROSOFT SUX
+@MyVotingSystem.API_HostAddress = http://localhost:3001
+
+GET {{MyVotingSystem.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

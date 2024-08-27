@@ -1,0 +1,62 @@
+.candidate-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 2px;
+    width: 45%;
+    display: flex;
+    margin-left: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    cursor: pointer; /*allows the whole card to be clickable*/
+}
+.grey-candidate-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 2px;
+    width: 45%;
+    display: flex;
+    margin-left: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    background-color: grey;
+    cursor: pointer; /*allows the whole card to be clickable*/
+}
+
+.candidate-card-headshot {
+    width: 160px;     
+    height: 200px;    
+    margin-right: 16px; 
+    border-radius: 12px; 
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(103, 103, 103, 0.1); 
+    border: 2px solid #fffefe; 
+}
+
+.candidate-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /*for info to take available space*/
+}
+.vote-now-button {
+    position: absolute; top: 13px; right: 17px;
+    font-family: 'Andale Mono', monospace; 
+    color: #004cff;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgb(19, 4, 233); /*semi-transparent border */
+    backdrop-filter: blur(8px);
+    border-radius: 10px; 
+    padding: 8px 14px; 
+    transition: color 0.2s ease, background-color 0.2s ease; 
+}
+
+.vote-now-button:hover {
+    color: rgb(89, 73, 73); /* Bright white text on hover */
+    background: #ff0040, #004cff;/* Slightly more opaque on hover */
+}

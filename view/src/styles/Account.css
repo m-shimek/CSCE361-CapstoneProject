@@ -1,0 +1,149 @@
+.account-page {
+    font-family: Andale Mono, monospace;
+    font-weight: 90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.account-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 45px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 500px; 
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.account-form h2 {
+    align-self: flex-start;
+    color: #004cff;
+    font-size: 1.9em;
+    font-family: Andale Mono, monospace;
+    margin-bottom: -70px;
+}
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#top-box {
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.account-form input, .account-form select {
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.account-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #004cff;
+    color: white;
+    margin-top: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 1.3em; 
+    cursor: pointer;
+    font-family: Andale Mono, monospace;
+}
+
+
+
+#submit {
+    background-color: #004cff;
+    color: white;
+}
+
+#reset {
+    background-color: #6a00ff;
+    color: white;
+}
+
+#logout {
+    background-color: #ff7300;
+    color: white;
+}
+
+#delete {
+    background-color: #ff0000;
+    color: white;
+}
+
+#about {
+    background-color: #e600ff;
+    color: white;
+}
+
+#submit:hover {
+    background-color: #000084;
+}
+
+#reset:hover {
+    background-color: #3a008b;
+}
+
+#logout:hover {
+    background-color: #a34900;
+}
+
+#delete:hover {
+    background-color: #890000;
+}
+
+
+#submit:active {
+    background-color: #000056;
+}
+
+#reset:active {
+    background-color: #25005a;
+}
+
+#logout:active {
+    background-color: #5c2900;
+}
+
+#delete:active {
+    background-color: #5c0000;
+}
+/*adjsustements for smaller screens*/
+@media (max-width: 600px) {
+    .account-form > div {
+        flex-direction: column;
+    }
+
+    .account-form input[type="text"],
+    .account-form input[type="password"],
+    .account-form input[type="date"],
+    .account-form select {
+        width: 100%; /* inputs take up full width */
+    }
+}

@@ -1,0 +1,159 @@
+.confirm-account {
+    position: relative;
+    font-family: Merriweather, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.confirm-account-form {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+.confirm-account-form h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    align-self: flex-start; 
+    color: #004cff;
+    font-size: 1.9em;
+}
+
+.confirm-account-form h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: flex-start; 
+    color: #6c6c6c;
+}
+
+.confirm-account-form input {
+    width: 100%;
+    padding: 17px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.confirm-account-form button.button1 {
+    width: 100%;
+    padding: 15px;
+    align-items: center;
+    background-color: #004cff;
+    color: white;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family: Andale Mono, monospace;
+}
+
+.confirm-account-form button.button2 {
+    width: 60%;
+    padding: 15px;
+    align-items: center;
+    background-color: #00ba09;
+    color: white;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family: Merriweather, serif;
+}
+.confirm-account-form button.button1:hover {
+    background-color: #0000cc;
+}
+
+.confirm-account-form button.button2:hover {
+    background-color: #168500;
+}
+
+.confirm-account-form p {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #004cff;
+}
+
+.confirm-account-form p.error-message {
+    color: red;
+}
+
+.confirm-account-form p.success-message {
+    color: green;
+}
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    
+  }
+  
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+  
+.modal-content h2,
+.modal-content button.closelink {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+
+
+.modal-content button.close-link {
+    padding: 10px;
+    align-items: center;
+    background-color: #ba7f00;
+    color: white;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-size: 1.3em;
+    cursor: pointer;
+    font-family: Andale Mono, monospace;
+}
+  
+.modal-content button.close-link:hover {
+    background-color: #855000;
+}
